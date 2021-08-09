@@ -1,0 +1,17 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}@{{profile.username}}'s Timeline{% endblock title %}
+
+{% block body %}
+    {% for tweet in profile.tweet_set.all %}
+        <div class="tweet">
+            <div class="tweet-header">
+                <h2>{{tweet.tweet_creator}}</h2>
+                <small>{{tweet.tweet_date }}</small>
+            </div>
+            
+            <p>{{ tweet.tweet_content }}</p>
+        </div>
+    {% endfor %}
+{% endblock body %}

@@ -1,0 +1,50 @@
+body {
+    margin: 0px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+    background: hsla(0, 100%, 34%, 1);
+    margin: 0px;
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+.logo img{
+    width: 40px;
+    height: 100%;
+    transition: 0.2s;
+    fill: white;
+}
+.logo h1 {
+    font-weight: 200;
+    font-size: 1.25em;
+    margin-left: 5px;
+    transition: 0.2s;
+    color: white;
+}
+.logo:hover .logo img{
+    background-image: url(../img/cardinal-coral.png);
+}
+.logo:hover h1 {
+    color: hsla(15, 100%, 81%, 1);
+    text-decoration: none;
+}
+
+.tweet {
+    max-width: 450px;
+    padding: 15px;
+    border:hsla(0, 100%, 34%, 1) solid 2px;
+    color:hsla(0, 100%, 34%, 1);
+}
